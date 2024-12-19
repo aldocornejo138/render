@@ -31,8 +31,6 @@ production:
   <<: *default
   url: <%= ENV['DATABASE_URL'] %>
 
-  # Configuration for Action Cable (if using Redis)
-
   cable:
     <<: *default
-    database: render_production_cable
+    url: <%= ENV['DATABASE_URL'] %>
