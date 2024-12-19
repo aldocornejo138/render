@@ -17,7 +17,3 @@ test:
 production:
   <<: *default
   adapter: async
-
-queue:
-  <<: *default
-  url: <%= ENV['DATABASE_URL'] %>
