@@ -32,7 +32,7 @@ production:
   url: <%= ENV['DATABASE_URL'] %>
 
   # Configuration for Action Cable (if using Redis)
+
   cable:
     <<: *default
     database: render_production_cable
-    migrations_paths: db/cable_migrate
